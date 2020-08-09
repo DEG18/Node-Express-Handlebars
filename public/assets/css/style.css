@@ -1,7 +1,15 @@
+html {
+  background-color: whitesmoke;
+}
+
+h1 {
+  background-color: lightblue;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+}
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
 }
 
 .label {

@@ -1,11 +1,6 @@
 <div class="container">
     <div class="row">
-        <h1>Burgers!</h1>
-        <br>
-        <img class="imgClass" src="https://i.pinimg.com/564x/01/1d/1d/011d1d429a11a56939f6b4c2831f1061.jpg">
-    </div>
-    <div class="row">
-        <div class="col-md">
+        <div class="col">
             <h2>Burgers that are not devoured!</h2>
             <ul>
                 {{#each burgers}}
@@ -15,9 +10,8 @@
                 {{/each}}
             </ul>
         </div>
-        <div class="col-md">
+        <div class="col">
             <h2>Burgers that are devoured!</h2>
-
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}
@@ -27,21 +21,18 @@
             </ul>
         </div>
     </div>
-    <div class="row">
-
-        <form class="create-form">
-
-            <div class="form-group">
-                <label for="ca">Burger Name:</label>
-                <input type="text" id="ca" name="name">
-            </div>
-
-            <div class="form-group">
-                <label for="devoured">Devoured?</label><br>
-                <input type="radio" name="devoured" value="0"> Fresh
-            </div>
-
-            <button type="submit">Add Burger</button>
-        </form>
+    <div class="text-center">
+        <div class="col">
+            <form class="create-form">
+                <div class="form-group">
+                    <label for="ca">Burger Name:</label>
+                    <input type="text" id="ca" name="name">
+                    <input type="radio" name="devoured" value="0"> SURE?
+                </div>
+                <button type="submit">Add Burger</button>
+            </form>
+        </div>
+        <br>
+        <br>
     </div>
 </div>
