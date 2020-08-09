@@ -1,7 +1,10 @@
+<div class="text-center">
+    <h1>Order Your Burgers!</h1>
+</div>
 <div class="container">
     <div class="row">
-        <div class="col">
-            <h2>Burgers that are not devoured!</h2>
+        <div class="col predevouredBackground">
+            <h2 class="text-center">Burgers that are not devoured!</h2>
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
@@ -11,7 +14,12 @@
             </ul>
         </div>
         <div class="col">
-            <h2>Burgers that are devoured!</h2>
+            <div class="text-center">
+                <img class="img" src="/assets/css/burger.png" alt="Burger">
+            </div>
+        </div>
+        <div class="col devouredBackground">
+            <h2 class="text-center">Burgers that are devoured!</h2>
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}
@@ -20,7 +28,10 @@
                 {{/each}}
             </ul>
         </div>
+
     </div>
+    <br>
+    <br>
     <div class="text-center">
         <div class="col">
             <form class="create-form">
